@@ -1,0 +1,21 @@
+#Criar pods
+kubectl apply -f <nome do arquivo>.yml
+
+#Buscar todos os pods
+kubectl get pods --all-namespaces
+
+#Buscar todos os servicos
+kubectl get service
+
+#Buscar todos os no
+kubectl get nodes
+
+#escalando pods
+kubectl scale <nome do deployment> --replicas=<quantidade de replicas> #ex:. --replicas=6
+
+#Observer alteracoes nos pods real time
+kubectl get pods -w
+
+#Ver informacoes detalhadas do pode
+kubectl describe pod <nome do pod>
+
